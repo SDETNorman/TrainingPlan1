@@ -7,7 +7,7 @@ This was only tested with IntelLij
 
 # Install the required items
 
-- Clone the Repo
+- Clone the Repo using IntelLij
 - Click on Trust on this Project
 - Install the Maven Dependencies
 
