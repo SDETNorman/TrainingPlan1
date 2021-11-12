@@ -14,6 +14,10 @@ public class WindowsPage extends TestBase {
     @FindBy(id = "cli_shellHeaderSearchInput")
     WebElement searchTextBox;
 
+    @FindBy(xpath = "(//a[contains(text(), 'Comprar')])[3]")
+    WebElement buyBtn;
+
+
     public WindowsPage() {
         PageFactory.initElements(driver, this);
     }
@@ -22,6 +26,7 @@ public class WindowsPage extends TestBase {
         searchBtn.click();
         searchTextBox.sendKeys(keyword);
         searchTextBox.sendKeys((Keys.ENTER));
+        buyBtn.click();
     }
 
 }
